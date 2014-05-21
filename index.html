@@ -11,20 +11,15 @@
     <link rel="stylesheet" href="./style/global.css">
     <script src="./bower_components/modernizer/modernizr.js"></script>
 </head>
-
+<!-- AIzaSyDATdqSizgW6o0Xx78u-nn6d_jmWtQJJtc -->
 <body>
-    <div class="row">
-  <div class="large-12 columns">
- 
-     
+
       <nav class="top-bar">
         <ul class="title-area">
            
           <li class="name">
             <h1>
-              <a href="#">
-                Top Bar Title
-              </a>
+              <input id="font1" type="text" />
             </h1>
           </li>
           <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
@@ -49,6 +44,11 @@
           </ul>
         </section>
       </nav>
+    <div class="row">
+  <div class="large-12 columns">
+ 
+     
+
  
      
   
@@ -196,8 +196,14 @@
   </footer>
 <script src="./bower_components/jquery/jquery.js"></script>
 <script src="./bower_components/foundation/js/foundation.min.js"></script>
+<script src="./bower_components/fontselect-jquery-plugin/jquery.fontselect.js" type="text/javascript" charset="utf-8" async defer></script>
 <script>
     $(document).foundation();
 </script>
+    <script>
+      $(function(){
+        $('#font1').fontselect();
+      });
+    </script>
 </body>
 </html>
