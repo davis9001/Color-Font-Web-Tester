@@ -24,18 +24,8 @@
         </ul>
         <section class="top-bar-section">
           <ul class="left">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
           </ul>
           <ul class="right">
-            <li class="search">
-              <form>
-                <input type="search">
-              </form>
-            </li>
-            <li class="has-button">
-              <a class="small button" href="#">Search</a>
-            </li>
           </ul>
         </section>
       </nav>
@@ -57,28 +47,6 @@
     </div>
     </div>
   </div><br>
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="row">
-        <div class="large-3 small-6 columns">
-          <img src="http://placekitten.com/300/301"/>
-          <h6 class="panel">Description</h6>
-        </div>
-        <div class="large-3 small-6 columns">
-          <img src="http://placekitten.com/300/302"/>
-          <h6 class="panel">Description</h6>
-        </div>
-        <div class="large-3 small-6 columns">
-          <img src="http://placekitten.com/300/303"/>
-          <h6 class="panel">Description</h6>
-        </div>
-        <div class="large-3 small-6 columns">
-          <img src="http://placekitten.com/300/304"/>
-          <h6 class="panel">Description</h6>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="row">
     <div class="large-12 columns">
       <div class="row">
@@ -114,6 +82,28 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-3 small-6 columns">
+          <img src="http://placekitten.com/300/301" class="round"/>
+          <h6 class="center">Description</h6>
+        </div>
+        <div class="large-3 small-6 columns">
+          <img src="http://placekitten.com/300/302" class="round"/>
+          <h6 class="center">Description</h6>
+        </div>
+        <div class="large-3 small-6 columns">
+          <img src="http://placekitten.com/300/303" class="round"/>
+          <h6 class="center">Description</h6>
+        </div>
+        <div class="large-3 small-6 columns">
+          <img src="http://placekitten.com/300/304" class="round"/>
+          <h6 class="center">Description</h6>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="row">
     <div class="large-12 columns">
       <hr>
@@ -141,7 +131,6 @@
 <script>
   $(function(){
     $('#font1').fontselect().change(function(){
-        
           // replace + signs with spaces for css
           var font = $(this).val().replace(/\+/g, ' ');
           
@@ -155,7 +144,7 @@
           $('h4').css('font-family', font[0]);
           $('h5').css('font-family', font[0]);
           $('h6').css('font-family', font[0]);
-        });;
+        });
     $('#font2').fontselect().change(function(){
         
           // replace + signs with spaces for css
@@ -168,7 +157,7 @@
           $('body').css('font-family', font[0]);
           $('p').css('font-family', font[0]);
           $('a').css('font-family', font[0]);
-        });;
+        });
   });
 </script>
 </body>

@@ -3,3 +3,10 @@
     margin: 0;
     padding: 0;
 }
+.round {
+    border-radius: 100% !important;
+}
+
+.center {
+    text-align: center;
+}
